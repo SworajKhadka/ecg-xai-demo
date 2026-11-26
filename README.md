@@ -8,7 +8,8 @@ ecg-xai-demo/
   samples/          00001_lr.hea + 00001_lr.dat (PTB-XL record 00001)
   models/           resnet.pt, inception.pt, bilstm.pt, meta.json   <- from ecg_models.zip
   results.json      test-set metrics                                 <- from ecg_models.zip
-  figures/          Grad-CAM / IG / SHAP figures                     <- from ecg_models.zip
+  docs/figures/     Grad-CAM / IG / SHAP figures                     <- from ecg_models.zip
+  results/          ablation.csv, severity.csv result tables
 
 ## Run
 python -m venv .venv
