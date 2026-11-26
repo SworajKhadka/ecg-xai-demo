@@ -26,6 +26,7 @@ NAVY, RED, MUTED = "#14213D", "#C8323A", "#4A5568"
 HERE = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(HERE, "models")
 SAMPLE_DIR = os.path.join(HERE, "samples")
+REPO_URL = "https://github.com/SworajKhadka/ecg-xai-demo"
 
 
 @st.cache_resource
@@ -123,6 +124,14 @@ with st.sidebar:
             base = os.path.join(tmp, stem)
     st.header("2. Explanation")
     method = st.radio("Method", ["Grad-CAM (M1 ResNet)", "Grad-CAM (M2 InceptionTime)", "Integrated Gradients (ensemble)"])
+    with st.expander("About"):
+        st.markdown(
+            "**Explainable ECG Analysis**\n\n"
+            "Multi-label diagnosis, severity grading and visual explanations for 12-lead ECGs, "
+            "using a stacked ensemble of three deep learning models trained on PTB-XL.\n\n"
+            "_Research decision-support prototype, not a medical device._\n\n"
+            f"[GitHub repository]({REPO_URL}) · [README]({REPO_URL}#readme)"
+        )
 
 if base is None:
     st.info("Choose a sample record or upload a record's .hea and .dat files in the sidebar.")
