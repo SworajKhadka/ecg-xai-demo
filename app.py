@@ -221,3 +221,13 @@ if os.path.exists(res_path):
         st.dataframe(pd.DataFrame(res["severity"]).set_index("index").style.format("{:.4f}"), width="stretch")
         lo, hi = res["stacking_auroc_ci95"]
         st.caption(f"Stacking macro AUROC 95% bootstrap CI: {lo:.4f} – {hi:.4f} · test ECGs: {res['n_test']}")
+        if "severity_confusion" in res:
+            st.markdown("**Severity grade confusion matrix (ensemble)**")
+            cm = pd.DataFrame(res["severity_confusion"],
+                              index=[f"True {g}" for g in range(4)],
+                              columns=[f"Pred {g}" for g in range(4)])
+            cm["Total"] = cm.sum(axis=1)
+            st.dataframe(cm, width="stretch")
+            cm_png = os.path.join(HERE, "docs", "figures", "severity_confusion_matrix.png")
+            if os.path.exists(cm_png):
+                st.image(cm_png, caption="Rows = true grade (0-3), columns = predicted grade (0-3).")
