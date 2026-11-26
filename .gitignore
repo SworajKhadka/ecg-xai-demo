@@ -1,4 +1,13 @@
-.venv/
+# Python
 __pycache__/
 *.pyc
+
+# Environments
+.venv/
+
+# Tooling
+.pytest_cache/
+.claude/
+
+# OS
 .DS_Store
