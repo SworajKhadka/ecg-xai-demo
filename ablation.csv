@@ -1,0 +1,9 @@
+Method,Macro AUROC,Macro AUPRC,Macro F1,ECE
+M1 1D ResNet,0.9293,0.8292,0.7519,0.0776
+M2 InceptionTime,0.9302,0.8334,0.7618,0.0678
+M3 CNN-BiLSTM,0.928,0.8251,0.743,0.0803
+Avg resnet+inception,0.9337,0.8387,0.7629,0.0712
+Avg resnet+bilstm,0.9326,0.8361,0.7541,0.0785
+Avg inception+bilstm,0.9328,0.8363,0.7611,0.0739
+Soft voting (3 models),0.9344,0.8399,0.7614,0.0741
+STACKING (ours),0.9345,0.8401,0.7641,0.0272

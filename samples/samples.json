@@ -1,0 +1,110 @@
+{
+ "00009_lr": {
+  "ecg_id": 9,
+  "fold": 10,
+  "labels": [
+   "NORM"
+  ],
+  "severity": 0,
+  "scp_codes": "{'NORM': 100.0, 'SR': 0.0}"
+ },
+ "00038_lr": {
+  "ecg_id": 38,
+  "fold": 10,
+  "labels": [
+   "NORM"
+  ],
+  "severity": 0,
+  "scp_codes": "{'NORM': 100.0, 'SR': 0.0}"
+ },
+ "00063_lr": {
+  "ecg_id": 63,
+  "fold": 10,
+  "labels": [
+   "MI"
+  ],
+  "severity": 2,
+  "scp_codes": "{'ASMI': 15.0, 'ABQRS': 0.0, 'SR': 0.0}"
+ },
+ "00175_lr": {
+  "ecg_id": 175,
+  "fold": 10,
+  "labels": [
+   "MI"
+  ],
+  "severity": 2,
+  "scp_codes": "{'IMI': 15.0, 'ABQRS': 0.0, 'SR': 0.0}"
+ },
+ "00116_lr": {
+  "ecg_id": 116,
+  "fold": 10,
+  "labels": [
+   "STTC"
+  ],
+  "severity": 1,
+  "scp_codes": "{'NDT': 100.0, 'SR': 0.0}"
+ },
+ "00128_lr": {
+  "ecg_id": 128,
+  "fold": 10,
+  "labels": [
+   "STTC"
+  ],
+  "severity": 1,
+  "scp_codes": "{'NDT': 100.0}"
+ },
+ "00065_lr": {
+  "ecg_id": 65,
+  "fold": 10,
+  "labels": [
+   "CD"
+  ],
+  "severity": 1,
+  "scp_codes": "{'IRBBB': 100.0, 'SR': 0.0}"
+ },
+ "00157_lr": {
+  "ecg_id": 157,
+  "fold": 10,
+  "labels": [
+   "CD"
+  ],
+  "severity": 1,
+  "scp_codes": "{'LAFB': 100.0, 'SR': 0.0}"
+ },
+ "01219_lr": {
+  "ecg_id": 1219,
+  "fold": 10,
+  "labels": [
+   "HYP"
+  ],
+  "severity": 1,
+  "scp_codes": "{'LVH': 35.0, 'VCLVH': 0.0, 'STACH': 0.0}"
+ },
+ "01307_lr": {
+  "ecg_id": 1307,
+  "fold": 10,
+  "labels": [
+   "HYP"
+  ],
+  "severity": 1,
+  "scp_codes": "{'LVH': 50.0, 'VCLVH': 0.0, 'SR': 0.0}"
+ },
+ "00514_lr": {
+  "ecg_id": 514,
+  "fold": 10,
+  "labels": [
+   "MI"
+  ],
+  "severity": 3,
+  "scp_codes": "{'ILMI': 100.0, 'SR': 0.0}"
+ },
+ "00765_lr": {
+  "ecg_id": 765,
+  "fold": 10,
+  "labels": [
+   "MI"
+  ],
+  "severity": 3,
+  "scp_codes": "{'IMI': 15.0, 'INJAS': 100.0, 'INVT': 0.0, 'SR': 0.0}"
+ }
+}

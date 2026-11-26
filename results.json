@@ -1,0 +1,149 @@
+{
+ "ablation": [
+  {
+   "Method": "M1 1D ResNet",
+   "Macro AUROC": 0.9293,
+   "Macro AUPRC": 0.8292,
+   "Macro F1": 0.7519,
+   "ECE": 0.0776
+  },
+  {
+   "Method": "M2 InceptionTime",
+   "Macro AUROC": 0.9302,
+   "Macro AUPRC": 0.8334,
+   "Macro F1": 0.7618,
+   "ECE": 0.0678
+  },
+  {
+   "Method": "M3 CNN-BiLSTM",
+   "Macro AUROC": 0.928,
+   "Macro AUPRC": 0.8251,
+   "Macro F1": 0.743,
+   "ECE": 0.0803
+  },
+  {
+   "Method": "Avg resnet+inception",
+   "Macro AUROC": 0.9337,
+   "Macro AUPRC": 0.8387,
+   "Macro F1": 0.7629,
+   "ECE": 0.0712
+  },
+  {
+   "Method": "Avg resnet+bilstm",
+   "Macro AUROC": 0.9326,
+   "Macro AUPRC": 0.8361,
+   "Macro F1": 0.7541,
+   "ECE": 0.0785
+  },
+  {
+   "Method": "Avg inception+bilstm",
+   "Macro AUROC": 0.9328,
+   "Macro AUPRC": 0.8363,
+   "Macro F1": 0.7611,
+   "ECE": 0.0739
+  },
+  {
+   "Method": "Soft voting (3 models)",
+   "Macro AUROC": 0.9344,
+   "Macro AUPRC": 0.8399,
+   "Macro F1": 0.7614,
+   "ECE": 0.0741
+  },
+  {
+   "Method": "STACKING (ours)",
+   "Macro AUROC": 0.9345,
+   "Macro AUPRC": 0.8401,
+   "Macro F1": 0.7641,
+   "ECE": 0.0272
+  }
+ ],
+ "stacking_auroc_ci95": [
+  0.9284510175936567,
+  0.9399835135833288
+ ],
+ "per_class": [
+  {
+   "index": "NORM",
+   "AUROC": 0.9509,
+   "F1": 0.8706
+  },
+  {
+   "index": "MI",
+   "AUROC": 0.9362,
+   "F1": 0.7553
+  },
+  {
+   "index": "STTC",
+   "AUROC": 0.9424,
+   "F1": 0.7845
+  },
+  {
+   "index": "CD",
+   "AUROC": 0.9302,
+   "F1": 0.7759
+  },
+  {
+   "index": "HYP",
+   "AUROC": 0.9127,
+   "F1": 0.6342
+  }
+ ],
+ "severity": [
+  {
+   "index": "M1 1D ResNet",
+   "QWK": 0.7507,
+   "Accuracy": 0.6856,
+   "Grade-3 sensitivity": 0.1957
+  },
+  {
+   "index": "M2 InceptionTime",
+   "QWK": 0.7438,
+   "Accuracy": 0.6602,
+   "Grade-3 sensitivity": 0.2826
+  },
+  {
+   "index": "M3 CNN-BiLSTM",
+   "QWK": 0.7193,
+   "Accuracy": 0.6496,
+   "Grade-3 sensitivity": 0.1957
+  },
+  {
+   "index": "Ensemble (avg)",
+   "QWK": 0.7447,
+   "Accuracy": 0.6764,
+   "Grade-3 sensitivity": 0.2391
+  }
+ ],
+ "severity_confusion": [
+  [
+   646,
+   53,
+   3,
+   0
+  ],
+  [
+   283,
+   266,
+   146,
+   1
+  ],
+  [
+   53,
+   115,
+   540,
+   11
+  ],
+  [
+   0,
+   1,
+   34,
+   11
+  ]
+ ],
+ "n_test": 2163,
+ "deletion_test": {
+  "n": 30,
+  "drop_top10pct": 0.34189929962158205,
+  "drop_random10pct": -0.004472112655639649
+ }
+}

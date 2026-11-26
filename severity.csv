@@ -1,0 +1,5 @@
+,QWK,Accuracy,Grade-3 sensitivity
+M1 1D ResNet,0.7507,0.6856,0.1957
+M2 InceptionTime,0.7438,0.6602,0.2826
+M3 CNN-BiLSTM,0.7193,0.6496,0.1957
+Ensemble (avg),0.7447,0.6764,0.2391
