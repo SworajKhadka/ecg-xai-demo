@@ -201,7 +201,7 @@ ax.set_xlabel(f"contribution to '{cls_name}' (log-odds); ensemble probability {p
 for s in ["top", "right"]:
     ax.spines[s].set_visible(False)
 fig.tight_layout(); st.pyplot(fig)
-st.caption("Exact SHAP values for the linear meta-learner (identical to shap.LinearExplainer): "
+st.caption("Exact SHAP values for the linear meta-learner (equivalent to shap.LinearExplainer): "
            "contribution = weight × (model probability − its average probability on the validation fold).")
 
 res_path = os.path.join(HERE, "results.json")
